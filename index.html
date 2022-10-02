@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--vavicon -->
+    <link rel="shortcut icon" href="assets/image/aturbuku.gif" />
+
+    <title>Atur Buku</title>
+  </head>
+
+  <body>
+    <!-- navigasi -->
+    <nav>
+      <div class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="material-icons" id="btn">subject</i>
+          <i class="material-icons" id="close">close</i>
+        </label>
+        <h2 id="atur-buku" class="atur-buku">Atur buku</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#add">add buku</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">welcome,</div>
+          <div class="text-two">ATUR BUKU</div>
+          <div class="text-three">
+            website pusat dimana kamu dapat mengatur buku mu tanpa ada masalah
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+
+    <section class="about card" id="about">
+      <div class="title"><span>About</span></div>
+      <div class="content">
+        <p>
+          halo selamat datang di website atur buku , perkenalkan nama saya nanda
+          safiq alfiansyah dari kota ponorogo. website ini saya buat untuk
+          menyelsaikan tugas Dicoding yakni tugas front end ada banyak sekali
+          kegunaan website ini yang utama yakni bertugas mengatur buku dengan
+          menggunakan sistem java script.
+        </p>
+        <br />
+        <p>
+          Sebenernya ada banyak sekali codingan yang sudah saya buat akan tetapi
+          saya hanya bisa membuat codingan sederhana yang belum tergolong
+          sesuatu yang istimewah semoga user bisa menikmati beberapa item pada
+          app ini .
+        </p>
+      </div>
+    </section>
+
+    <!-- add book self app -->
+
+    <section>
+      <div class="main-body" id="add">
+        <div class="atas">
+          <div class="card">
+            <div class="title"><span>Tambah Buku Baru</span></div>
+
+            <p for="judul" class="label">Judul</p>
+            <form id="formDataBuku" action="" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="judul"
+                  id="judul"
+                  placeholder="masukan judul..."
+                />
+              </div>
+
+              <p for="penulis" class="label">Penulis</p>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="penulis"
+                  id="penulis"
+                  placeholder="masukan penulis..."
+                />
+              </div>
+
+              <p for="tahun" class="label">Tahun</p>
+              <div class="form-group">
+                <input
+                  type="number"
+                  name="tahun"
+                  id="tahun"
+                  placeholder="masukan tahun..."
+                />
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  name="isRead"
+                  id="isRead"
+                  placeholder=""
+                />
+                <label for="isRead">Sudah selesai dibaca</label>
+              </div>
+              <button type="submit" class="submit-btn">Simpan</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="bawah">
+          <div class="card">
+            <div class="title"><span>Cari Buku</span></div>
+
+            <form id="formSearch" action="" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="pencarian"
+                  id="pencarian"
+                  placeholder="search..."
+                />
+                <label for="pencarian"></label>
+              </div>
+              <div class="form-search-bottom">
+                <button type="reset" class="reset-btn">
+                  <i class="bx bx-reset"></i>
+                </button>
+                <button type="submit" class="cari-btn">
+                  <i class="bx bx-search-alt-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="title"><span>buku Belum Dibaca</span></div>
+            <div id="belumDibaca"></div>
+          </div>
+          <div class="card">
+            <div class="title"><span>Buku Sudah Dibaca</span></div>
+            <div id="sudahDibaca"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="hello-footer">
+      <p>
+        Dibuat dengan Banyak 💜 oleh
+        <a href="https://github.com/nandasafiqalfiansyah" target="_blank"
+          >nanda safiq alfiansyah.</a
+        >
+        &copy; 2022
+      </p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
